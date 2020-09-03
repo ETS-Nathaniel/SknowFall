@@ -8,7 +8,7 @@ const firebaseConfig = {
   projectId: "comeaux-sknow-fall-2020",
   storageBucket: "comeaux-sknow-fall-2020.appspot.com",
   messagingSenderId: "127924966193",
-  appId: "1:127924966193:web:93aceddeb9363e0c2a5610",
+  appId: "1:127924966193:web:93aceddeb9363e0c2a5610"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -74,5 +74,5 @@ export default {
       .catch(function(error) {
         console.log(error);
       });
-  },
+  }
 };

@@ -62,7 +62,7 @@ export default {
   components: { particlesJS },
 
   mounted: function() {
-    Firebase.auth.onAuthStateChanged((user) => {
+    Firebase.auth.onAuthStateChanged(user => {
       if (user) {
         this.user.loggedIn = true;
         this.user.data = user;
@@ -77,8 +77,8 @@ export default {
     return {
       user: {
         loggedIn: false,
-        data: {},
-      },
+        data: {}
+      }
     };
   },
 
@@ -91,7 +91,7 @@ export default {
         return this.user.data.displayName.split(" ")[0];
       }
       return null;
-    },
+    }
   },
   methods: {
     login() {
@@ -105,8 +105,8 @@ export default {
     },
     logout() {
       Firebase.logout();
-    },
-  },
+    }
+  }
 };
 </script>
 
