@@ -10,12 +10,7 @@
           <v-spacer></v-spacer>
           <v-card-text>
             <v-form>
-              <v-text-field
-                label="Login"
-                name="login"
-                prepend-icon="mdi-account"
-                type="text"
-              ></v-text-field>
+              <v-text-field label="Login" name="login" prepend-icon="mdi-account" type="text"></v-text-field>
 
               <v-text-field
                 id="password"
@@ -28,9 +23,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn block @click="login" color="primary" large outlined
-              >Login</v-btn
-            >
+            <v-btn block @click="login" color="primary" large outlined>Login</v-btn>
           </v-card-actions>
           <br />
           <v-divider></v-divider>
@@ -38,12 +31,10 @@
           <p class="text-center">Or login using one of the following methods</p>
           <v-card-actions class="justify-center">
             <v-btn @click="fbLogin" outlined color="indigo">
-              <v-icon>mdi-facebook</v-icon>
-              Facebook
+              <v-icon>mdi-facebook</v-icon>Facebook
             </v-btn>
             <v-btn @click="gLogin" outlined>
-              <v-icon>mdi-google</v-icon>
-              Google
+              <v-icon>mdi-google</v-icon>Google
             </v-btn>
           </v-card-actions>
           <br />
