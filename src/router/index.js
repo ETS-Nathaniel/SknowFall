@@ -7,18 +7,19 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Login",
-    component: Login
-  },
-  {
     path: "/dashboard",
     name: "Dashboard",
     component: Dashboard
-  }
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login
+  },
 ];
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 });
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="login">
     <Login />
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
-.home {
+.login {
   position: absolute;
   top: 0;
   left: 0;

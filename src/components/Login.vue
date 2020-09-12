@@ -122,20 +122,20 @@ export default {
   name: "Login",
   components: { particlesJS },
 
-  mounted: function() {
-    Firebase.auth.onAuthStateChanged(user => {
-      if (user) {
-        this.$store.dispatch("setUser", user);
-        this.user.loggedIn = true;
-        this.user.data = user;
-        this.$router.push("/dashboard");
-      } else {
-        this.user.loggedIn = false;
-        this.user.data.email = "";
-        this.user.data.password = "";
-      }
-    });
-  },
+  // mounted: function() {
+  //   Firebase.auth.onAuthStateChanged(user => {
+  //     if (user) {
+  //       this.$store.dispatch("setUser", user);
+  //       this.user.loggedIn = true;
+  //       this.user.data = user;
+  //       this.$router.push("/dashboard");
+  //     } else {
+  //       this.user.loggedIn = false;
+  //       this.user.data.email = "";
+  //       this.user.data.password = "";
+  //     }
+  //   });
+  // },
 
   data() {
     return {
